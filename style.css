@@ -40,7 +40,7 @@ main {
 .avatar span {
   position: absolute;
   top: -60px;
-  right: 1px;
+  right: 70px;
   z-index: 1;
 }
 
