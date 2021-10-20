@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  /*O place items utiliza o align itens e o justify itens*/
+  place-items: center;
+}
+
+main {
+  background: url(images/Background.png);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin: 0 auto 0 auto;
+  text-align: center; /*Alinhar os itens no meio*/
+  color: var(--gray);
+}
+
+/*1 rem equivale a 16px*/
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative; /*Determina a posição principal*/
+}
+
+.avatar span {
+  position: absolute;
+  top: -60px;
+  right: 1px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /*Serve para adptar a imagem*/
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--gray);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 0.5rem; /*Espaçamento entre a lista*/
+  justify-content: center;
+}
