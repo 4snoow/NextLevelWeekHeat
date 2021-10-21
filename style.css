@@ -12,6 +12,7 @@ body {
 }
 
 body {
+  background: var(--black);
   display: grid;
   /*O place items utiliza o align itens e o justify itens*/
   place-items: center;
